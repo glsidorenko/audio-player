@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./img/lemonade.png">
+    <link rel="stylesheet" >
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico"/>
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        
+        <div class="music-player">
+            <div class="music-cover">
+                <audio src="/music/beyonce.mp3" id="music"></audio>
+            </div>
+            <div class="box">
+                <div class="song-info">
+                    <h1 class="song-name" id="name">Beyonce</h1>
+                    <h2 class="song-artist" id="artist">Don't Hurt Yourself</h2>
+                </div>
+                <div class="duration-slider">
+                    <span id="currentTime">0:00</span>
+                    <input type="range" value="0" id="duration-slider">
+                    <span id="durationTime"></span>
+                </div>
+                <div class="player-controls">
+                    <button class="fas fa-backward" id="backward"></button>
+                    <div class="play-pause">
+                        <button class="fas fa-play" id="play"></button>
+                        <button class="fas fa-pause" id="pause"></button>
+                    </div>
+                    <button class="fas fa-forward" id="forward"></button>
+                </div>
+                <div class="sound-slider">
+                    <button class="fas fa-volume-mute" id="mute"></button>
+                    <input type="range" min="0" value="20" step="1" max="100" id="sound-slider">
+                    <button class="fas fa-volume-up" id="max-volume"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <p>© 2022</p>
+            <a class="rs-course" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+            <a class="rs-course" href="https://github.com/glsidorenko">Github</a>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
